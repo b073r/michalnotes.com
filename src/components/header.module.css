@@ -1,0 +1,79 @@
+.topNavigation {
+    grid-area: top;
+    background: #000000;
+    padding: 1em;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menuContainer {
+    cursor: pointer;
+    width: 1em;
+    float: left;
+    margin-right: 1em;
+}
+
+.menuContainer:hover > .bar2 {
+    width: 0.8em;
+}
+
+.menuContainer:hover > .bar3 {
+    width: 0.6em;
+}
+
+.bar1, .bar2, .bar3 {
+    font-family: 'Montserrat', sans-serif;
+    width: 1em;
+    height: 2px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.search {
+    float: right;
+}
+
+.thinText {
+    font-weight: 200;
+}
+
+#sideMenu {
+    background: #000000;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 100000;
+    color: #ffffff;
+    display: none;
+    position: absolute;
+    top:3em;
+    left: 0;
+}
+
+#sideMenu > ul {
+    list-style: none;
+}
+
+#sideMenu > ul li {
+    padding: 1em;
+    display: inline;
+}
+
+#sideMenu > ul a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color .5s;
+}
+
+
+#sideMenu > ul a:hover {
+    font-weight: 600;
+}
+
+#sideMenu:hover {
+    display: inline;
+}
+
+.menuContainer:hover ~ #sideMenu {
+    display: inline;
+}

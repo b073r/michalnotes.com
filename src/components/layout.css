@@ -1,5 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200,400,600&display=swap);
+
 html {
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -22,6 +27,20 @@ section,
 summary {
   display: block;
 }
+
+footer {
+  
+  font-family: 'Montserrat', sans-serif !important;
+  grid-area: footer;
+  background: #000000;
+  padding: 1em;
+  color: #ffffff;
+}
+
+footer > .socialIcons {
+  float: right;
+}
+
 audio,
 canvas,
 progress,
@@ -220,6 +239,11 @@ img {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
+main {
+  padding-top: 2em;
+}
+
 h1 {
   margin-left: 0;
   margin-right: 0;
@@ -230,8 +254,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
@@ -247,8 +270,8 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  
+  font-family: 'Montserrat', sans-serif !important;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
