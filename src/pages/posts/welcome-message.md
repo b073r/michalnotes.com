@@ -1,5 +1,13 @@
 ---
-title: "Welcome to my personal page!"
+title: "Introduction to myself"
 date: "15-09-2019"
 ---
-Welcome everyone!
+As a my first ever blog post I decided to write short "about me". 
+## How am I?
+
+
+## What do I do?
+
+
+## Why this blog?
+

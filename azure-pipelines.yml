@@ -16,9 +16,9 @@ steps:
   inputs:
     verbose: false
 
-- script: 'npm install -g gatsby-cli'
+- script: 'sudo npm install -g gatsby-cli'
   displayName: 'Install Gatsby'
 
-- script: 'npm install --save-dev jest babel-jest react-test-renderer babel-preset-gatsby identity-obj-proxy'
+- script: 'sudo npm install --save-dev jest babel-jest react-test-renderer babel-preset-gatsby identity-obj-proxy'
   displayName: 'Install test frameworks'
 
