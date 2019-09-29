@@ -14,7 +14,7 @@ steps:
 - script: 'sudo npm install -g gatsby-cli'
   displayName: 'Install Gatsby'
 
-- script: 'sudo npm install --save-dev jest babel-jest react-test-renderer babel-preset-gatsby identity-obj-proxy'
+- script: 'sudo npm install --save-dev jest babel-jest react-test-renderer babel-preset-gatsby identity-obj-proxy gatsby-transformer-remark'
   displayName: 'Install test frameworks'
 
 - script: 'sudo gatsby build'
