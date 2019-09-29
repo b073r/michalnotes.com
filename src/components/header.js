@@ -11,9 +11,8 @@ const MenuItem = props => (
 const Menu = (props) => (
   <section id={headerCss.sideMenu}>
     <ul>
-          <MenuItem to="/">Home</MenuItem>
-          <MenuItem to="/about">About</MenuItem>
-          <MenuItem to="/contact">Contact</MenuItem>
+          <MenuItem to="/about">about</MenuItem>
+          <MenuItem to="/contact">contact</MenuItem>
       </ul>
   </section>
 )
@@ -27,15 +26,14 @@ const MenuIcon = () => (
 )
 
 const Logo = () => (
-  <span className={headerCss.thinText}>michal<strong>notes</strong>.com</span>
+  <span className={headerCss.logo}>michal<strong>notes</strong>.com</span>
 )
 
 const Header = ({ siteTitle }) => (
   <>
   <header className={headerCss.topNavigation}>
-        <MenuIcon />
-        <Menu />
         <Logo />
+        <Menu />
   </header>
   </>
 )

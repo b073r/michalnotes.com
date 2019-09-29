@@ -1,12 +1,15 @@
 ---
+path: /posts/java13-features
 title: Java 13 features
-date: "15-09-2019"
-slug: ""
+date: 16-09-2019
+slug: java13-features
 ---
+
 This is a post about java 13 features
 
 ```java
-var samepl = 12;
-while (samepl > 0)
-    samepl--;
+var sample = 12;
+
+while (sample > 0)
+    sample--;
 ```

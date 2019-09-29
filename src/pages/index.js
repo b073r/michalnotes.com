@@ -10,27 +10,25 @@ const IndexPage = ({data}) => (
     <SEO title="Home Page"/>
     <h2>Latest Articles</h2>
     {data.allMarkdownRemark.edges.map(({ node }) => (
-      <PostPreview title={node.frontmatter.title} link={createSlug(node.frontmatter.title)}/>
+      <PostPreview title={node.frontmatter.title} link={node.frontmatter.slug}/>
     ))}
   </Layout>
 )
 
 export default IndexPage
 
-export const createSlug = data => {
-  return data.replace(' ', '-');
-}
-
 export const posts = graphql `
   query {
-    allMarkdownRemark {
+    allMarkdownRemark (
+      sort: {fields: frontmatter___date, order: DESC}
+    ) {
       edges {
         node {
           frontmatter {
             title
             date
+            slug
           }
-          html
         }
       }
       totalCount
