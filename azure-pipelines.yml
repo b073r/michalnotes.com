@@ -15,14 +15,14 @@ steps:
   displayName: 'Install Gatsby'
 
 - script: 'sudo npm install --save-dev jest babel-jest react-test-renderer babel-preset-gatsby identity-obj-proxy gatsby-transformer-remark'
-  displayName: 'Install test frameworks'
+  displayName: 'Install frameworks'
 
 - script: 'sudo gatsby build'
   displayName: 'Build website'
 
 - task: PublishBuildArtifacts@1
   inputs:
-    rootFolderOrFile: '${Build.SourcesDirectory}/public'
+    rootFolderOrFile: 'public'
     archiveType: 'zip'
     archiveFile: '${Build.ArtifactStagingDirectory}/${Build.BuildId}.zip'
-    replaceExistingArchive: true;
+    replaceExistingArchive: true
