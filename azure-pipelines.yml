@@ -20,6 +20,8 @@ steps:
 - script: 'sudo gatsby build'
   displayName: 'Build website'
 
+- script: 'sudo ls'
+  displayName: 'Show folders structure'
 
 - task: ArchiveFiles@2
   inputs:
@@ -28,3 +30,4 @@ steps:
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     replaceExistingArchive: true
+    verbose: true
