@@ -20,12 +20,9 @@ steps:
 - script: 'sudo gatsby build'
   displayName: 'Build website'
 
-- script: 'sudo ls'
-  displayName: 'Show folders structure'
-
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(Build.BinariesDirectory)/public'
+    rootFolderOrFile: '$(Build.SourcesDirectory)/public/'
     includeRootFolder: true
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
